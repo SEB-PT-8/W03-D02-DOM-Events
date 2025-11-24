@@ -13,7 +13,13 @@ todoInputElement.value = 'Abulrahman'
 
 
 function addToDoItem(){
-    console.log('todo item add')
+    const newLiElement = document.createElement('li') // 1. create a new li
+    newLiElement.textContent = todoInputElement.value // 2. give the li the textContent of the todoInputElement.value
+
+    console.log(newLiElement)
+    todoListElement.appendChild(newLiElement) // 3. add the li to the page in the ol
+
+    
 }
 
 
@@ -22,4 +28,4 @@ function addToDoItem(){
 // 1. what type of event
 // 2. function
 
-submitButtonElement.addEventListener('click')
+submitButtonElement.addEventListener('click',addToDoItem)
