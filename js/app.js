@@ -19,6 +19,8 @@ function addToDoItem(){
     console.log(newLiElement)
     todoListElement.appendChild(newLiElement) // 3. add the li to the page in the ol
 
+    todoInputElement.value = ''
+
     
 }
 
