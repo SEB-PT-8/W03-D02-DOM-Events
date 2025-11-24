@@ -9,13 +9,13 @@ console.log(submitButtonElement)
 console.log(todoListElement)
 
 
-todoInputElement.value = 'Abulrahman'
 
 
 function addToDoItem(){
     const newLiElement = document.createElement('li') // 1. create a new li
     newLiElement.textContent = todoInputElement.value // 2. give the li the textContent of the todoInputElement.value
 
+    newLiElement.style.marginBottom = '10px'
     console.log(newLiElement)
     todoListElement.appendChild(newLiElement) // 3. add the li to the page in the ol
 
